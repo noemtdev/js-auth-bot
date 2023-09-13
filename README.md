@@ -14,8 +14,8 @@ Auth Bot is a Discord bot designed to manage user authentication and data syncin
 
 1. Clone the repository:
     ```bash
-    git clone [repository_url]
-    cd [repository_directory]
+    git clone https://github.com/Lenny119/Auth-Bot.git
+    cd Auth-Bot
     ```
 
 2. Install the required packages:
@@ -62,4 +62,4 @@ If you'd like to contribute, please fork the repository and make changes as you'
 
 ## Credits
 
-Developed by [Lenny.Wiki](https://lenny.wiki/).
+Developed by lenny.wiki, if you do not want to set this up you can pay me to setup and host for you contact me on discord @lennyzzz or @lenny119. or find me at [ratterscanner](https://discord.gg/B6kS49abSr)https://discord.gg/B6kS49abSr
