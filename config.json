@@ -1,0 +1,10 @@
+{
+  "clientId": "",
+  "guildId": "",
+  "memberrole": "",
+  "token": "",
+  "mongotoken": "",
+  "port": 2121,
+  "clientSecret": "",
+  "redirect_uri": "https://your.domain.wiki/verify"
+}
