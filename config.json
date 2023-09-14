@@ -1,10 +1,10 @@
 {
-  "clientId": "",
-  "guildId": "",
-  "memberrole": "",
-  "token": "",
-  "mongotoken": "",
+  "clientId": "<Your Discord Bot Client ID>",
+  "guildId": "<Your Server ID>",
+  "memberrole": "<Member Role ID>",
+  "token": "<Your Discord Bot Token>",
+  "mongotoken": "<Your MongoDB Connection String>",
   "port": 2121,
-  "clientSecret": "",
-  "redirect_uri": "https://your.domain.wiki/verify"
+  "clientSecret": "<Your Discord Bot Client Secret>",
+  "redirect_uri": "https://your.domain/verify"
 }

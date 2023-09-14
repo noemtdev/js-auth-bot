@@ -11,11 +11,13 @@ module.exports = {
                 .setDescription('The channel to send the verification message')
                 .setRequired(true)),
     async execute(interaction) {
-        interaction.reply({ ephermeral: true, content: `Setting up verification...`})
-        if (!interaction.member.permissions.has('ADMINISTRATOR')) {
-            return interaction.reply('You are not an administrator.');
-        }
+        await interaction.deferReply();
+        const hasAdminPermissions = interaction.member.permissions.has('Administrator');
 
+        if (!hasAdminPermissions) {
+            return interaction.editReply({content: 'I refuse (kindly).', ephemeral: true});
+          }
+        interaction.editReply({ ephermeral: true, content: `Setting up verification...`})
         const channel = interaction.options.getChannel('channel');
 
         const embed = new EmbedBuilder()

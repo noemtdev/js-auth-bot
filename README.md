@@ -1,65 +1,72 @@
 # Auth Bot by Lenny.Wiki
 
-Auth Bot is a Discord bot designed to manage user authentication and data syncing. It comes with commands to pull, refresh tokens, and setup verification for users.
+Auth Bot is a robust Discord bot designed to manage user authentication, synchronize user data, and offer several utility commands. Built with Discord.js v14, this bot ensures seamless user verification and data management.
 
-## Features
+## 🌟 Features
 
-- **Pull Command**: Retrieve user details and perform operations based on user's authentication status.
-- **Refresh Command**: Refresh access tokens for users in the authed model.
-- **Setup Command**: Setup verification for the server, allowing users to verify their identity.
-- **API.js**: An API utility that connects and interfaces with Discord's API.
-- **Config.json**: Configuration file to store essential bot parameters.
+- **Pull Command**: Fetches authenticated users and can perform operations based on their authentication status.
+- **Refresh Command**: Renews access tokens for users in the authed model.
+- **Setup Command**: Initializes server verification, allowing users to confirm their identity.
+- **API Utility**: `API.js` assists in connecting and interfacing with Discord's API.
+- **Configuration**: `config.json` is provided to store essential bot parameters.
 
-## Setup
+## 🚀 Setup and Installation
 
-1. Clone the repository:
+1. **Clone the Repository**:
     ```bash
     git clone https://github.com/Lenny119/Auth-Bot.git
     cd Auth-Bot
     ```
 
-2. Install the required packages:
+2. **Install Dependencies**:
     ```bash
     npm install
     ```
 
-3. Set up your `config.json`:
+3. **Set Up Configuration**:
+    - Rename `config-sample.json` to `config.json`.
+    - Populate the fields in `config.json`. Here's a quick overview:
     ```json
     {
-        "clientId": "",
-        "guildId": "",
-        "memberrole": "",
-        "token": "",
-        "mongotoken": "",
+        "clientId": "<Your Discord Bot Client ID>",
+        "guildId": "<Your Server ID>",
+        "memberrole": "<Member Role ID>",
+        "token": "<Your Discord Bot Token>",
+        "mongotoken": "<Your MongoDB Connection String>",
         "port": 2121,
-        "clientSecret": "",
+        "clientSecret": "<Your Discord Bot Client Secret>",
         "redirect_uri": "https://your.domain/verify"
     }
     ```
 
-4. Run the bot:
+4. **Deploy Commands**:
+    ```bash
+    node deploy-commands.js
+    ```
+
+5. **Run the Bot**:
     ```bash
     node index.js
     ```
 
-## Commands
+## 🤖 Commands
 
-### /pull
-- Description: Pull users from the authed model and perform a predefined action.
-- Usage: `/pull`
+### `/pull`
+- **Description**: Fetches users from the database and pulls them (please do /refresh before pulling)
+- **Usage**: `/pull`
 
-### /refresh
-- Description: Refresh access tokens for users in the authed model.
-- Usage: `/refresh`
+### `/refresh`
+- **Description**: Renews access tokens for users in the database
+- **Usage**: `/refresh`
 
-### /setup
-- Description: Setup verification for the server.
-- Usage: `/setup`
+### `/setup`
+- **Description**: Initializes server verification.
+- **Usage**: `/setup`
 
-## Contributing
+## 🤝 Contributing
 
-If you'd like to contribute, please fork the repository and make changes as you'd like. Pull requests are warmly welcome.
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/Lenny119/Auth-Bot/issues). If you'd like to contribute, please fork the repository and make changes as you'd like. Pull requests are warmly welcome.
 
-## Credits
+## 🌐 Credits
 
-Developed by lenny.wiki, if you do not want to set this up you can pay me to setup and host for you contact me on discord @lennyzzz or @lenny119. or find me at [ratterscanner](https://discord.gg/B6kS49abSr)
+Developed and maintained by lenny.wiki. If you're not inclined to set this up yourself, you can contact me for setup and hosting services. Reach out on Discord: `@lennyzzz` or `@lennydotie`, or join us at [ratterscanner](https://discord.gg/B6kS49abSr).
